@@ -1,0 +1,623 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+li{
+  list-style: none;
+}
+
+
+html{
+  font-size: 90%;
+}
+
+
+/* Styling for login page */
+
+.login {
+  display: flex;
+}
+
+.two-grid-login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.loginImg img {
+  max-width: 100%;
+  display: block;
+}
+
+
+.loginform {
+  width: 100%;
+  max-width: 400px;
+  height: 370px;
+  margin-left: 100px;
+  margin-top: 35px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px white;
+}
+.loginform hr{
+  color: white;
+  border: 2px solid white;
+}
+
+/* Login heading */
+.loginheading {
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
+/* Login form */
+.loginform form {
+  padding: 20px;
+}
+
+.loginform label {
+  display: block;
+  margin-bottom: 8px;
+  color:white;
+}
+
+.loginform input[type="email"],
+.loginform input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+}
+
+.loginform button.btnlogin {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loginform button.btnlogin:hover{
+  border: solid white;
+}
+
+
+/* Responsive login page media query*/
+
+@media (max-width: 768px) {
+  .two-grid-login {
+    grid-template-columns: 1fr;
+  }
+
+  .loginImg {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .loginform {
+    padding: 1rem;
+  }
+}
+
+
+/* Styling for register page*/
+
+.register {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.two-grid-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.register-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Registration form */
+.register-data {
+  width: 100%;
+  max-width: 400px;
+  height: 460px;
+  margin-left: 150px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px white;
+}
+
+.main-heading {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.main-heading hr{
+  border: 2px solid white;
+  
+}
+
+.register-data form {
+  padding: 20px;
+}
+
+.register-data label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.register-data input[type="text"],
+.register-data input[type="email"],
+.register-data input[type="number"],
+.register-data input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+}
+
+.register-data button.btnsubmit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-data button.btnsubmit:hover{
+  border: solid white;
+}
+
+/* Contact form Styling */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactgrid {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin-right: 130px;
+}
+
+.contactimg img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contact form */
+.contactform {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 30px;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 0 10px white;
+}
+
+.contactform hr{
+  border: 2px solid white;
+}
+
+.contactheading {
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
+.contactform form {
+  padding: 20px;
+}
+
+.contactform label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.contactform input[type="text"],
+.contactform input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+}
+
+.contactform textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  resize: vertical;
+  color: white;
+}
+
+.contactform button.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contactform button.btn-submit:hover{
+  border: solid white;
+}
+
+/* Home Page Styling*/
+.grid-col-home{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content {
+  padding: 40px;
+  margin-left: 90px;
+  color: white;
+}
+
+.content h1 {
+  font-size: 32px;
+  color: white;
+  margin: 20px 0;
+}
+
+.content p:last-child {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.content p{
+  line-height: 1.5;
+}
+
+.btn-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-group button:hover {
+  background-color: #0056b3;
+  border: solid white;
+}
+
+/* Home analytics section */
+
+.grid-four-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+.div1 {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.div1 h2 {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.div1 p {
+  font-size: 18px;
+  color: #0a0a0a;
+  background-color: white;
+}
+
+.homeImg img {
+  margin-right: 100px;
+  border-radius: 25px;
+}
+
+.homeImg2 img{
+   margin-top: 40px;
+   margin-left: 100px;
+   border-radius: 25px;
+}
+
+.content2{
+  padding: 40px;
+  margin-right: 70px;
+  margin-top: 60px;
+  color: white;
+}
+
+.content2 h1 {
+  font-size: 32px;
+  color: white;
+  margin: 20px 0;
+}
+
+.content2 p:last-child {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.content2 p{
+  line-height: 1.5;
+}
+
+/* About Page Styling*/
+
+.grid-col-about{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-content{
+  padding: 40px;
+  margin-left: 90px;
+  color: white;
+}
+
+.about-content h1 {
+  font-size: 32px;
+  color: white;
+  margin: 20px 0;
+}
+
+.about-content p:last-child {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.about-content p{
+  line-height: 1.5;
+}
+
+.aboutImg img{
+  margin-top: 65px;
+  margin-right: 100px;
+  border-radius: 25px;
+}
+
+
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.error-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.error-content h2 {
+  font-size: 5rem;
+  color: #faf7f7;
+}
+
+.error-content h4 {
+  font-size: 1.5rem;
+  color: #f7f1f1;
+}
+
+/* React toastify pop up css */
+
+.toastBody {
+  font-family: "Atlas Grotesk Web", Arial, Helvetica, sans-serif;
+  font-size: 0.999rem;
+}
+
+
+/*.service {
+  padding: 20px;
+  color: white;
+}
+
+.container {
+  text-align: center;
+}
+
+.mainheading {
+  font-size: 24px;
+  color: white;
+  margin-left: 150px;
+}
+
+.Grid-Three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #f4f4f4;
+  padding: 5px;
+  border-radius: 2px;
+  box-shadow: 0 0 5px white;
+  margin-left: 40px;
+}
+
+.cardImg {
+  text-align: center;
+}
+
+.cardImg img {
+  margin-top: 10px;
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.card-detais {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.grid-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.card-detais h2 {
+  font-size: 20px;
+  color: white;
+  margin-top: 5px;
+}
+
+.card-detais p {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}*/
+
+/* service.css */
+
+.service {
+  margin: 20px 0;
+}
+
+.Grid-Three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+  gap: 20px; /* Adjust the gap between cards */
+  margin-left: 105px;
+  margin-right: 100px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.cardImg img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-detais {
+  margin-top: 10px;
+  color: white;
+}
+
+.grid-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: white;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: white;
+}
+
+
+.logout-container {
+  display: flex;              /* Use flexbox */
+  justify-content: center;    /* Center horizontally */
+  align-items: center;        /* Center vertically */
+  height: 100vh;            /* Full height of the viewport */
+}
+
+button.logoutbtn {
+  background-color: #ff4b5c; /* Red background */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none; /* Remove the default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 20px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #ff1e2b; /* Darker red on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
